@@ -45,7 +45,7 @@
         "descricao": "Ração granulada para Kinguios.",
         "preco": 21.00,
         "precoAntigo": 26.00,
-        "imagem": "assets/img/alcon4.webp",
+        "imagem": "assets/img/prod4.jpg",
         "alt": "Alcon Basic Tabs",
         "button": "Adicionar ao Carrinho"
     },
@@ -55,7 +55,7 @@
         "descricao": "Ração para peixes de fundo.",
         "preco": 19.90,
         "precoAntigo": 24.00,
-        "imagem": "assets/img/alcon5.webp",
+        "imagem": "assets/img/prod5.jpg",
         "alt": "Alcon Shaimp",
         "button": "Adicionar ao Carrinho"
     },
@@ -65,8 +65,8 @@
         "descricao": "Ração mix para peixes de aquário.",
         "preco": 29.90,
         "precoAntigo": 35.00,
-        "imagem": "assets/img/alcon6.webp",
-        "alt": "Alcon Colours",
+        "imagem": "assets/img/prod6.jpg",
+        "alt": "Aquário Curvo Boyu Led EA-80E 95L",
         "button": "Adicionar ao Carrinho"
     },
     {

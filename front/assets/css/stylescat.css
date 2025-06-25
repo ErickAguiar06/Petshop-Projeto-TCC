@@ -1,4 +1,3 @@
-/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
@@ -177,11 +176,12 @@ button.fechar:hover {
     color: rgb(0, 0, 0);
 }
 
+/* --- MODAL LATERAL DO CARRINHO (IGUAL AO GRAN.CSS) --- */
 .sidebar {
     position: fixed;
     top: 0;
-    right: -520px; 
-    width: 400px; 
+    right: -520px;
+    width: 400px;
     height: 100%;
     background: #fff;
     border-left: 2px solid #ccc;
@@ -189,27 +189,41 @@ button.fechar:hover {
     box-shadow: -3px 0 10px rgba(0,0,0,0.2);
     transition: right 0.3s ease-in-out;
     z-index: 9999;
-    overflow-y: auto; 
-  }
-  .sidebar.ativo {
-    right: 0; 
-  }
-  
-  .frete-gratis {
-    color: green;
+    overflow-y: auto;
+}
+.sidebar.ativo {
+    right: 0;
+}
+.conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button.fechar {
+    background-color: #121F3E;
+    color: white;
+    border: none;
+    font-size: 18px;
     font-weight: bold;
-  }
-  
-  .sugestoes {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .sugestoes li {
-    margin-bottom: 5px;
-  }
-  
-  .carrinho-produto {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+button.fechar:hover {
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1.1);
+}
+.carrinho-produto {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -221,33 +235,34 @@ button.fechar:hover {
     border-radius: 10px;
     transition: 0.3s;
     text-align: center;
-  }
-  
-  .carrinho-produto img {
-    width: 120px; /* menor imagem */
+}
+.carrinho-produto img {
+    width: 120px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-  }
-  
-  .conteudo img {
+}
+.frete-gratis {
+    color: green;
+    font-weight: bold;
+}
+.screen-reader-text1 {
+    font-size: 20px;
+    color: #ff8c42;
+}
+.conteudo img.imagem-produto-adicionado {
     width: 30%;
-    display: flex;
     object-fit: contain;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 10px;
     margin-bottom: 12px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     text-align: center;
+    display: block;
+}
 
-  }
-  
-  /* Estilo básico do menu */
+/* Estilo básico do menu */
 .menu {
   list-style: none;
   display: flex;
@@ -295,4 +310,71 @@ button.fechar:hover {
 /* Mostrar submenu ao passar o mouse */
 .menu-item:hover .submenu {
   display: block;
+}
+
+/* Menu hamburguer e slide-menu */
+.menu-toggle {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    z-index: 1001;
+    display: block;
+}
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #343434;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+}
+.slide-menu.active {
+    left: 0;
+}
+.menu-toggle.active {
+    left: 250px;
+}
+.slide-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.slide-menu ul a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    display: block;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    transition: background 0.2s;
+}
+.slide-menu ul a:hover {
+    background-color: #ffeb3b;
+    color: #333;
+}
+@media (max-width: 700px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        width: 90vw;
+        max-width: 350px;
+    }
+    .banner {
+        height: 200px;
+    }
 }

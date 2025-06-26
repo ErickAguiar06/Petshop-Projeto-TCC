@@ -12,7 +12,7 @@ Este repositório contém toda a documentação referente ao projeto **Petshop 4
 
 ## 📅 Cronograma
 
-![Cronograma](docs/Cronograma/nome-da-imagem.png)
+![Cronograma](docs/Cronograma/cronograma.png)
 
 ---
 

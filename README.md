@@ -1,81 +1,68 @@
-# Metodologia Kanban 
+# Documentação - Petshop 4 Patas 🐾
 
-Para gerenciar o desenvolvimento do nosso software para petshop, escolhemos a metodologia **Kanban**, pois ela nos permite organizar e visualizar melhor o fluxo de trabalho, garantindo maior eficiência na execução das tarefas.
+Este repositório contém toda a documentação referente ao projeto **Petshop 4 Patas**.
 
-O **Kanban** é um método ágil baseado em um quadro visual, onde as tarefas são organizadas em diferentes colunas que representam os estágios do processo, como **"A Fazer"**, **"Em Progresso"** e **"Concluído"**. Essa abordagem facilita a comunicação e a distribuição de tarefas entre os membros da equipe, permitindo que todos acompanhem o andamento do projeto de forma clara e objetiva.
+---
 
-## Benefícios do Kanban no Projeto
+## 🧠 Canvas
 
-1. **Visualização do fluxo de trabalho**  
-   - Com um quadro Kanban, conseguimos acompanhar o progresso de cada funcionalidade do software, evitando desorganização.
+![Canvas](docs/Canvas/nome-da-imagem.png)
 
-2. **Melhoria na gestão de tarefas**  
-   - Cada membro do grupo pode assumir responsabilidades específicas e movimentar as tarefas conforme avança no desenvolvimento, promovendo uma melhor colaboração.
+---
 
-3. **Flexibilidade e adaptação**  
-   - Como o desenvolvimento de software pode exigir ajustes constantes, o Kanban permite que façamos mudanças rápidas sem comprometer o andamento geral do projeto.
+## 📅 Cronograma
 
-4. **Identificação de problemas**  
-   - Se percebermos que alguma etapa do desenvolvimento está demorando mais que o esperado, conseguimos rapidamente tomar medidas para solucionar o problema e evitar atrasos.
+![Cronograma](docs/Cronograma/nome-da-imagem.png)
 
-5. **Entrega**  
-   - Em vez de esperar até o final do projeto para testar tudo, podemos ir melhorando o projeto final conforme recebemos feedbacks, garantindo melhorias constantes e mais qualidade no produto final.
+---
 
-## Organização do Quadro Kanban
+## 📊 DER - DCU - DA
 
-Nosso quadro Kanban será dividido nas seguintes colunas:
-- **Backlog**: Ideias e funcionalidades a serem implementadas
-- **A Fazer**: Tarefas planejadas para o próximo ciclo de desenvolvimento
-- **Em Progresso**: Tarefas que estão sendo trabalhadas no momento
-- **Em Revisão**: Funcionalidades finalizadas que precisam ser revisadas e testadas
-- **Concluído**: Funcionalidades prontas e integradas ao software
+### DER (Diagrama Entidade Relacionamento)
+![DER](docs/DER%20-%20DCU%20-%20DA/der.png)
 
-Com essa abordagem, garantimos um fluxo de trabalho mais eficiente e organizado, permitindo que nosso time desenvolva um software de petshop de maneira ágil e com alta qualidade.
+### DCU (Diagrama de Casos de Uso)
+![DCU](docs/DER%20-%20DCU%20-%20DA/dcu.png)
 
-# 🐕‍🦺 Software para Petshop 🐶
+### DA (Diagrama de Atividades)
+![DA](docs/DER%20-%20DCU%20-%20DA/da.png)
 
-### Software a ser desenvolvido:
-O projeto consiste no desenvolvimento de um **Sistema de Gestão para Petshop**, que auxiliará na administração de serviços e no atendimento aos clientes de forma eficiente e automatizada. O software será uma plataforma web, permitindo acesso fácil para os clientes.
+---
 
-### Propósito do Software
-O objetivo do software é otimizar a gestão de um petshop, proporcionando maior controle sobre agendamentos, estoque de produtos, cadastro de clientes e serviços oferecidos. Com isso, buscamos aumentar a eficiência operacional, melhorar a experiência do cliente e reduzir falhas no atendimento.
+## 📌 Jira - Kanban
 
-### Funcionalidades Principais
-- **Cadastro de Clientes e Pets**: Registro completo dos clientes e seus animais de estimação.
-- **Agendamento de Serviços**: Sistema de marcação para banho, tosa, consultas veterinárias e outros serviços.
-- **Gerenciamento de Produtos e Estoque**: Controle de itens disponíveis para venda e consumo interno.
-- **Histórico de Atendimentos**: Registro das interações e serviços prestados para cada cliente.
+![Jira](docs/Jira/jira-kanban.png)
 
-### Resultados Esperados
-Com o desenvolvimento deste software, espera-se:
-- Redução de erros no agendamento e organização dos serviços.
-- Melhoria na comunicação com os clientes.
-- Maior controle sobre o estoque e vendas.
-- Aumento da eficiência operacional do petshop.
+---
 
-## Montagem da Equipe
+## 💡 Análise SWOT
 
-### Papéis na Equipe:
-Embora a metodologia **Kanban** não exija uma estrutura rígida de funções, cada membro da equipe assumirá responsabilidades específicas para garantir o sucesso do projeto. A equipe é composta por:
+![SWOT](docs/SWOT/swot.png)
 
-- **Erick Aguiar** – Desenvolvimento Front-End e Design da Interface
-  - Responsável por criar a interface do usuário, garantindo uma experiência intuitiva e agradável.
-  - Implementação do layout e interação do sistema utilizando tecnologias adequadas.
+---
 
-- **Thiago Muniz** – Desenvolvimento Back-End e Banco de Dados
-  - Responsável pela lógica do sistema e gerenciamento do banco de dados.
-  - Desenvolvimento das APIs e integração do front-end com o back-end.
+## 🔺 Triângulo de Ferro
 
-- **Justo Willian** – Gestão do Projeto e Testes
-  - Organização do fluxo de tarefas e acompanhamento do progresso no Kanban.
-  - Realização de testes para garantir o funcionamento correto do sistema e identificação de melhorias.
+![Triângulo de Ferro](docs/Triângulo%20de%20Ferro/triangulo-de-ferro.png)
 
-### Contribuição de Cada Papel
-- **Desenvolvimento Front-End**: Garante que o software seja visualmente atrativo e fácil de usar.
-- **Desenvolvimento Back-End**: Assegura que o sistema tenha um funcionamento eficiente e seguro.
-- **Gestão e Testes**: Mantém o projeto organizado e garante a qualidade do software antes da entrega.
+---
 
-Com essa distribuição de funções, cada membro poderá focar em suas responsabilidades principais, garantindo um desenvolvimento mais eficiente e colaborativo.
+## 🎨 Link do Figma
 
-## Repositório parte front-end completa 
-https://github.com/Thiagomuniz08/ProjetoTCC1
+Acesse o protótipo no Figma:  
+🔗 [Clique aqui para acessar](https://www.figma.com/design/tflvVzcUeXVv9C0by0dUCf/Petshop-4-Patas?node-id=0-1&t=AzANg3BaGiPewRdf-1)
+
+## 🛠️ Metodologia: Kanban
+
+Para a gestão e organização do desenvolvimento do projeto, utilizamos a metodologia ágil **Kanban**. Essa abordagem permite uma visualização clara das tarefas, facilitando o controle do fluxo de trabalho e garantindo uma melhor organização da equipe.
+
+O quadro Kanban foi organizado com as seguintes etapas:
+
+- 🔵 **Backlog** – Lista de tarefas a serem realizadas.
+- 🟡 **Em andamento** – Tarefas que estão sendo desenvolvidas no momento.
+- 🟢 **Concluído** – Tarefas finalizadas e revisadas.
+
+## Grupo
+Erick Aguiar
+Thiago Muniz 
+Justo Willian

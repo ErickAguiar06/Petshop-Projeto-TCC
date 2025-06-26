@@ -6,7 +6,7 @@ Este repositório contém toda a documentação referente ao projeto **Petshop 4
 
 ## 🧠 Canvas
 
-![Canvas](docs/Canvas/nome-da-imagem.png)
+![Canvas](docs/Canvas/canvas.jpg)
 
 ---
 

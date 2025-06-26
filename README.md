@@ -63,6 +63,7 @@ O quadro Kanban foi organizado com as seguintes etapas:
 - 🟢 **Concluído** – Tarefas finalizadas e revisadas.
 
 ## Grupo
-- Erick Aguiar
+- Erick Aguiar (https://github.com/ErickAguiar06)
 - Thiago Muniz 
 - Justo Willian
+ 

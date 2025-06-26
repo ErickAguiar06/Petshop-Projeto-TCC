@@ -62,8 +62,9 @@ O quadro Kanban foi organizado com as seguintes etapas:
 - 🟡 **Em andamento** – Tarefas que estão sendo desenvolvidas no momento.
 - 🟢 **Concluído** – Tarefas finalizadas e revisadas.
 
-## Grupo
-- Erick Aguiar (https://github.com/ErickAguiar06)
-- Thiago Muniz 
-- Justo Willian
- 
+
+## 👥 Grupo
+
+- 👨‍💻 **Erick Aguiar** - [GitHub](https://github.com/ErickAguiar06)
+- 👨‍💻 **Thiago Muniz** - [GitHub](https://github.com/Thiagomuniz08)
+- 👨‍💻 **Justo Willian** - [GitHub](https://github.com/justowillian)

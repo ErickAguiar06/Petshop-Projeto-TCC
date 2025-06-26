@@ -25,25 +25,25 @@ Este repositório contém toda a documentação referente ao projeto **Petshop 4
 ![DCU](docs/DER%20-%20DCU%20-%20DA/DCU.jpg)
 
 ### DA (Diagrama de Atividades)
-![DA](docs/DER%20-%20DCU%20-%20DA/DA - petshop.jpg)
+![DA](docs/DER%20-%20DCU%20-%20DA/DA.jpg)
 
 ---
 
 ## 📌 Jira - Kanban
 
-![Jira](docs/Jira/jira-kanban.png)
+![Jira](docs/Jira/Jira.png)
 
 ---
 
 ## 💡 Análise SWOT
 
-![SWOT](docs/SWOT/swot.png)
+![SWOT](docs/SWOT/SWOT.png)
 
 ---
 
 ## 🔺 Triângulo de Ferro
 
-![Triângulo de Ferro](docs/Triângulo%20de%20Ferro/triangulo-de-ferro.png)
+![Triângulo de Ferro](docs/Triângulo%20de%20Ferro/triangulo.jpeg)
 
 ---
 
@@ -63,6 +63,6 @@ O quadro Kanban foi organizado com as seguintes etapas:
 - 🟢 **Concluído** – Tarefas finalizadas e revisadas.
 
 ## Grupo
-Erick Aguiar
-Thiago Muniz 
-Justo Willian
+- Erick Aguiar
+- Thiago Muniz 
+- Justo Willian

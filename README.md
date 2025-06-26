@@ -19,13 +19,13 @@ Este repositório contém toda a documentação referente ao projeto **Petshop 4
 ## 📊 DER - DCU - DA
 
 ### DER (Diagrama Entidade Relacionamento)
-![DER](docs/DER%20-%20DCU%20-%20DA/der.png)
+![DER](docs/DER%20-%20DCU%20-%20DA/DER.jpg)
 
 ### DCU (Diagrama de Casos de Uso)
-![DCU](docs/DER%20-%20DCU%20-%20DA/dcu.png)
+![DCU](docs/DER%20-%20DCU%20-%20DA/DCU.jpg)
 
 ### DA (Diagrama de Atividades)
-![DA](docs/DER%20-%20DCU%20-%20DA/da.png)
+![DA](docs/DER%20-%20DCU%20-%20DA/DA - petshop.jpg)
 
 ---
 

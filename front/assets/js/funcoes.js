@@ -1,16 +1,16 @@
 function adicionarAoCarrinho(id, nome, descricao, preco, imagem) {
-      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-      const index = carrinho.findIndex((item) => item.id === id);
-      if (index !== -1) {
+    const index = carrinho.findIndex((item) => item.id === id);
+    if (index !== -1) {
         carrinho[index].quantidade += 1;
-      } else {
+    } else {
         carrinho.push({ id, nome, descricao, preco, imagem, quantidade: 1 });
-      }
-
-      localStorage.setItem("carrinho", JSON.stringify(carrinho));
-      alert("Produto adicionado ao carrinho!");
     }
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    mostrarPainelLateral(nome, imagem); // Mostra o modal
+}
 
 function mostrarPainelLateral(nomeProduto, imagemProduto) {
     const painel = document.getElementById('carrinho-sidebar');

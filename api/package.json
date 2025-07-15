@@ -14,9 +14,10 @@
     "@prisma/client": "^6.8.2",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.1",
     "express": "^4.21.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "stripe": "^18.3.0"
   },
   "keywords": [],
   "description": "```bash\r cd api\r npm i prisma -g\r npm init -y\r npm i express cors dotenv\r npx prisma init --datasource-provider mysql\r ```",

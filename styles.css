@@ -32,7 +32,6 @@ header {
       max-width: 100%;
       overflow-x: hidden;
     }
-
     .carousel-track {
       display: flex;
       transition: transform 0.3s ease-in-out;
@@ -46,6 +45,10 @@ header {
       overflow: hidden;
       flex-shrink: 0;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+        .carousel-card:hover{
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.05);
     }
 
     .card-image {

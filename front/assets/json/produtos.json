@@ -75,8 +75,8 @@
         "descricao": "Ração natural para peixes.",
         "preco": 34.90,
         "precoAntigo": 40.00,
-        "imagem": "assets/img/alcon7.webp",
-        "alt": "Alcon Spirulina",
+        "imagem": "assets/img/prod7.jpg",
+        "alt": "Aquário Boyu Curvo 60 99 Litros",
         "button": "Adicionar ao Carrinho"
     },
     {
@@ -85,8 +85,8 @@
         "descricao": "Ração colorida para peixes ornamentais.",
         "preco": 22.90,
         "precoAntigo": 28.00,
-        "imagem": "assets/img/alcon10.png",
-        "alt": "Alcon Neon",
+        "imagem": "assets/img/prod8.jpg",
+        "alt": "Aquário Curvo Boyu Led EA-60E 68L",
         "button": "Adicionar ao Carrinho"
     },
     {
@@ -95,8 +95,8 @@
         "descricao": "Ração premium para peixes de aquário.",
         "preco": 44.90,
         "precoAntigo": 52.00,
-        "imagem": "assets/img/Alcon9.webp",
-        "alt": "Alcon Basic",
+        "imagem": "assets/img/prod9.jpg",
+        "alt": "Aquário de Vidro Retangular",
         "button": "Adicionar ao Carrinho"
     }
 ]

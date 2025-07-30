@@ -337,3 +337,6 @@ element.style {
     transform: translate3d(-5460px, 0px, 0px);
     width: 20020px;
 }
+.slick-prev {
+    left: -25px;
+}

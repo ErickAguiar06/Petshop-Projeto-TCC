@@ -35,7 +35,7 @@ header {
   display: block;
 }
 
-#carrinho-topo {
+#voltar-topo {
   background: #3c3b3af7;
   color: #333;
   border: none;
@@ -48,7 +48,7 @@ header {
   transition: background 0.2s;
   margin-left: 18px;
 }
-#carrinho-topo:hover {
+#voltar-topo:hover {
   background: #fdd835;
 }
 

@@ -50,6 +50,30 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
+#carrinho-topo {
+  background: #3c3b3af7;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#carrinho-topo:hover {
+  background: #fdd835;
+}
+
+
 button {
     display: inline-block;
     padding: 12px 24px;

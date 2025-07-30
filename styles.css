@@ -24,6 +24,9 @@ header {
     z-index: 1000;
     width: 100%;
     top: 0;
+    nav ul li a i {
+    margin-right: 6px;
+}
 }
 
     .carousel-container {
@@ -229,10 +232,69 @@ nav ul li a:hover {
     font-size: 16px;
     color: #ff8c42;
     margin: 5px 0;
+    
 }
 
 .product .btn {
     margin-top: 10px;
+}
+
+/* Produtos */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: center;
+  width: 250px;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+
+.product p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product span {
+  display: block;
+  font-size: 16px;
+  color: #ff8c42;
+  margin: 5px 0;
+  text-decoration: line-through; /* Preço original com linha */
+}
+
+.product .new-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c4520c; /* Cor do preço com desconto */
+  text-decoration: none;
+}
+
+/* Tag de Desconto */
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffeb3b;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1;
 }
 
 /* Rodapé */

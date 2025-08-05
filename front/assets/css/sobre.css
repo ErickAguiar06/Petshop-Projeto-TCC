@@ -1,24 +1,23 @@
 /* Variáveis de cores */
 :root {
   --primary-color: #c4520c;
-  --accent-color: #ffd08a;
+  --accent-color: #f4f4f4;
   --white-color: #ffffff;
   --gray-dark: #333;
-  --gray-light: #f4f4f4;
+  --gray-light: #fffaf0;
   --border-color: #d1d1d1;
   --hover-bg-color: #ffb84d;
   --button-hover-bg: #ff9966;
   --shadow-3: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset de margens e paddings */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: 'Arial', sans-serif;
   background-color: var(--gray-light);
@@ -62,13 +61,19 @@ body {
   color: var(--accent-color);
 }
 
-/* Espaço para compensar o header fixo */
 .main-content {
   padding-top: 100px;
   background-color: var(--gray-light);
 }
 
 /* Seção Sobre */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 .sobre-section {
   max-width: 900px;
   margin: 40px auto;
@@ -114,25 +119,23 @@ body {
   color: var(--primary-color);
 }
 
-.mapbox {
+.mapa-box {
   position: relative;
-  height: 250px;
   width: 100%;
-  border-radius: 16px;
+  height: 400px;
   margin-bottom: 30px;
-  border: 1px solid var(--gray-dark);
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #444;
 }
 
-.mapbox figure {
-  height: 100%;
-}
-
-.mapbox iframe {
+.mapa-box iframe {
   width: 100%;
   height: 100%;
   border: none;
   filter: grayscale(1) invert(1);
+  display: block;
 }
 
 .contact-form {
@@ -225,6 +228,85 @@ textarea.form-input::-webkit-resizer {
 
 .form-btn:disabled:hover {
   background: var(--primary-color);
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Seção Sobre */
+#sobre {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #321110;
+}
+
+#sobre p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #f7f4eb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Contato */
+#contato h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #321110;
+}
+
+form#form-contato {
+  background-color: #f7f4eb;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Botão de Enviar */
+.btn-enviar {
+  background-color: #955643;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #7a3d30;
 }
 
 /* Responsivo */

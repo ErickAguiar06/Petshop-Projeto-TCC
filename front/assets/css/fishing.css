@@ -6,7 +6,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color:	#28314f;
+    background-color:	#000000;
     padding: 20px 10%;
     color: #fff;
 }
@@ -18,7 +18,7 @@ header {
 body {
     margin: 0;
     padding: 0;
-    background-color: #28314f;
+    background-color: #5ce1e6;
     font-family: Arial, sans-serif;
 }
 
@@ -135,7 +135,7 @@ button.fechar:hover {
 }
 
 .banner {
-    background: url('../img/alcon.png') no-repeat center center;
+    background: url('../img/Produtos.png') no-repeat center center;
     background-size: cover; 
     display: block;
     height: 410px; 

@@ -29,7 +29,14 @@ header {
     margin-right: 6px;
 }
 }
-
+.logo img {
+  height: 100px; 
+  border-radius: 10000px;/* ou o tamanho que ficar melhor */
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
     .carousel-container {
      padding: 80px;
       position: relative;

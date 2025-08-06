@@ -340,3 +340,93 @@ element.style {
 .slick-prev {
     left: -25px;
 }
+
+
+ /* Estilo da seção de Produtos Recomendados */
+  .best-seller {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .best-seller h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Wrapper do Carrossel */
+  .carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+
+  /* Estilo dos Produtos */
+  .product {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+  }
+
+  /* Etiqueta de Desconto */
+  .discount-tag {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+  }
+
+  /* Estilo do Texto de Preço */
+  .product span {
+    display: block;
+    font-size: 14px;
+  }
+
+  .new-price {
+    font-weight: bold;
+    color: green;
+  }
+
+  /* Botão de Adicionar ao Carrinho */
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ffd700;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  /* Botões de Navegação (setas laterais) */
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .nav-left {
+    left: 0;
+  }
+
+  .nav-right {
+    right: 0;
+  }

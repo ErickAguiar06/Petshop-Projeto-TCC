@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+    
 }
 
 body {
@@ -187,22 +188,6 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Produtos */
-.products {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.product {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    text-align: center;
-}
-
 
 .foto-perfil{
     width: 150px;
@@ -228,7 +213,7 @@ nav ul li a:hover {
 }
 
 .product span {
-    display: block;
+    display: inline;
     font-size: 16px;
     color: #ff8c42;
     margin: 5px 0;
@@ -242,12 +227,17 @@ nav ul li a:hover {
 /* Produtos */
 .products {
   display: flex;
-  justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: stretch;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .product {
+  min-width: 250px;
+  flex: 0 0 auto;
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -255,8 +245,10 @@ nav ul li a:hover {
   transition: 0.3s;
   text-align: center;
   width: 250px;
+  position: relative;
+  margin-bottom: 20px;
+    overflow-x: hidden;
 }
-
 .product:hover {
   transform: translateY(-5px);
 }
@@ -358,15 +350,17 @@ element.style {
   /* Wrapper do Carrossel */
   .carousel-wrapper {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+    gap: 20px;
+    flex-wrap: wrap; /* permite quebrar linha se não couber */
     padding: 10px 0;
+    justify-content: center;
   }
 
   /* Estilo dos Produtos */
   .product {
     flex: 0 0 auto;
     width: 250px;
+    display: inline;
     margin: 0 10px;
     border: 1px solid #ddd;
     padding: 15px;

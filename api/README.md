@@ -2,17 +2,19 @@
 
 ```bash
 cd api
-npm i prisma -g
+npm i prisma -g 
 npm init -y
 npm i express cors dotenv
 npx prisma init --datasource-provider mysql
 ```
 
-# Se necessário
+# Necessário
 - Altere o endereço do arquivo **.env** para:   
 ```js
+STRIPE_SECRET_KEY=(chave secreta da conta Stripe)
 DATABASE_URL="mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
 ```
+# Se necessário use:
 ```
 npx prisma generate
 ```

@@ -12,8 +12,8 @@
     <div class="logo">4 PATAS</div>
     <nav>
         <ul>
-            <li><a href="/front/negocios.html"><i class="	fas fa-concierge-bell"></i> Serviços</a></li>
-            <li><a href="#"><i class="fas fa-tags"></i> Promoções</a></li>,
+            <li><a href="/front/negocios.html"><i class=" fas fa-concierge-bell"></i> Serviços</a></li>
+            <li><a href="#"><i class="fas fa-tags"></i> Promoções</a></li>
             <li><a href="front/sobre.html"><i class="fas fa-envelope"></i> Contato</a></li>
             <li><a href="front/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
         </ul>
@@ -63,33 +63,12 @@
       <img src="front/assets/img/Yellow Blue Cute Illustration Pet Shop Presentation.jpg" alt="Higiene 4" class="card-image">
     </div>
   </div>
-<!-- Botões -->
-<button class="prev">←</button>
-<button class="next">→</button>
-
-<!-- Container -->
-<div class="carousel">
-  <div class="carousel-track">
-    <!-- Cards -->
-    <div class="card">...</div>
-    <div class="card">...</div>
-    <div class="card">...</div>
-    <!-- etc -->
-  </div>
+  <button class="carousel-button right" onclick="moveCarousel(1)">&#8250;</button>
 </div>
 
-</div>
-
-  
-<section class="best-seller">
+  <section class="best-seller">
   <h2>Produtos Recomendados</h2>
-
-  <!-- Botão de navegação (seta esquerda) -->
-  <button class="carousel-nav nav-left" onclick="scrollCarousel(-1)">&#10094;</button>
-  
-  <!-- Carrossel de Produtos -->
-  <div class="carousel-wrapper" id="carousel">
-    <!-- Produto 1 -->
+  <div class="products">
     <div class="product">
       <div class="discount-tag">70% OFF</div>
       <img src="front/assets/img/magnus.png" alt="Ração Premium">
@@ -98,8 +77,6 @@
       <span class="new-price">R$ 26,99</span>
       <a href="front/magnus.html" class="btn">Adicionar ao Carrinho</a>
     </div>
-
-    <!-- Produto 2 -->
     <div class="product">
       <div class="discount-tag">15% OFF</div>
       <img src="front/assets/img/imagempremier1.png" alt="Brinquedo para Cães">
@@ -108,8 +85,6 @@
       <span class="new-price">R$ 42,49</span>
       <a href="front/form.html" class="btn">Adicionar ao Carrinho</a>
     </div>
-
-    <!-- Produto 3 -->
     <div class="product">
       <div class="discount-tag">20% OFF</div>
       <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
@@ -118,8 +93,8 @@
       <span class="new-price">R$ 28,79</span>
       <a href="front/origens.html" class="btn">Adicionar ao Carrinho</a>
     </div>
-
-    <!-- Repetição dos mesmos produtos -->
+  </div>
+   <div class="products">
     <div class="product">
       <div class="discount-tag">70% OFF</div>
       <img src="front/assets/img/magnus.png" alt="Ração Premium">
@@ -128,7 +103,6 @@
       <span class="new-price">R$ 26,99</span>
       <a href="front/magnus.html" class="btn">Adicionar ao Carrinho</a>
     </div>
-
     <div class="product">
       <div class="discount-tag">15% OFF</div>
       <img src="front/assets/img/imagempremier1.png" alt="Brinquedo para Cães">
@@ -137,7 +111,6 @@
       <span class="new-price">R$ 42,49</span>
       <a href="front/form.html" class="btn">Adicionar ao Carrinho</a>
     </div>
-
     <div class="product">
       <div class="discount-tag">20% OFF</div>
       <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
@@ -148,8 +121,11 @@
     </div>
   </div>
 
-  <!-- Botão de navegação (seta direita) -->
-
+  <!-- Repetir os produtos, se necessário -->
+  <div class="products">
+    <!-- Adicionar mais produtos aqui se necessário -->
+  </div>
+</section>
 
     <section class="categories">
         <h2>Compre por Categorias</h2>
@@ -199,7 +175,6 @@
     if (currentIndex > totalCards - 1) currentIndex = totalCards - 1;
 
     track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    
   }
 </script>
 
@@ -208,3 +183,4 @@
     </footer>
 </body>
 </html>
+

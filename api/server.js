@@ -9,6 +9,9 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 app.use(cors());
 app.use(express.json());
 
+const rota = require('./src/routes');
+app.use('/', rota);
+
 app.post('/create-checkout-session', async (req, res) => {
   const carrinho = req.body.carrinho;
   const line_items = carrinho.map(produto => ({

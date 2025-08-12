@@ -1,32 +1,47 @@
 const uri = 'http://localhost:3000'; 
 
+async function loginUsuario(email, senha) {
+    try {
+        const response = await fetch('http://localhost:3000/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, senha })
+        });
+        const data = await response.json();
+        if (response.ok && data.token) {
+            localStorage.setItem('token', data.token);
+            window.location.href = 'produtos.html'; // Redireciona para página de produtos
+        } else {
+            alert(data.message || 'Email ou senha inválidos.');
+        }
+    } catch (err) {
+        alert('Erro ao fazer login.');
+    }
+}
+
 function login() {
     const form = document.querySelector('#formLogin');
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-
         const dados = {
             email: form.email.value,
             senha: form.senha.value,
         };
-
         try {
             const response = await fetch(`${uri}/login`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(dados),
             });
-
             const data = await response.json();
-
             if (response.ok) {
+                localStorage.setItem('token', data.token); // Salva o token
                 alert('Login bem-sucedido!');
-                window.location.href = 'index.html'; // Redireciona para a página inicial
+                window.location.href = '../index.html';
             } else {
                 alert(data.message || 'Email ou senha inválidos.');
             }
         } catch (err) {
-            console.error('Erro ao fazer login:', err);
             alert('Erro ao fazer login.');
         }
     });

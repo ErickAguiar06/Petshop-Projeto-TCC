@@ -14,8 +14,17 @@ header {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
+     display: flex;
+  align-items: center;
+
+}
+
+.logo img {
+  height: 150px; 
+  border-radius: 10px;
+
 }
 body {
     margin: 0;

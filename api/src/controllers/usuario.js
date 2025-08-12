@@ -1,4 +1,6 @@
 const prisma = require('../connect');
+const jwt = require('jsonwebtoken');
+const SECRET = process.env.JWT_SECRET || 'secreta';
 
 const create = async (req, res) => {
     const { nome, email, telefone, senha } = req.body;
@@ -25,17 +27,16 @@ const login = async (req, res) => {
             where: { email },
         });
 
-        if (usuario) {
-            if (usuario.senha === senha) {
-                console.log('Login bem-sucedido:', usuario);
-                res.status(200).json({ message: 'Login bem-sucedido' });
-            } else {
-                console.log('Senha incorreta');
-                res.status(401).json({ message: 'Senha incorreta' });
-            }
+        if (usuario && usuario.senha === senha) {
+            // Gera o token JWT
+            const token = jwt.sign(
+                { id: usuario.id, email: usuario.email },
+                SECRET,
+                { expiresIn: '2h' }
+            );
+            res.status(200).json({ message: 'Login bem-sucedido', token });
         } else {
-            console.log('Usuário não encontrado');
-            res.status(401).json({ message: 'Usuário não encontrado' });
+            res.status(401).json({ message: 'Email ou senha inválidos.' });
         }
     } catch (err) {
         console.error('Erro no login:', err);

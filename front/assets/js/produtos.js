@@ -100,4 +100,23 @@ const slideMenu = document.getElementById('slide-menu');
 menuToggle.addEventListener('click', () => {
     slideMenu.classList.toggle('active');
     menuToggle.classList.toggle('active');
-})
+});
+
+// Carregar os produtos do backend protegido por JWT
+async function carregarProdutosBackend() {
+    const token = localStorage.getItem('token');
+    try {
+        const response = await fetch('http://localhost:3000/produtos', {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+        if (!response.ok) throw new Error('Não autorizado ou erro ao buscar produtos');
+        produtos = await response.json();
+        exibirCards();
+    } catch (error) {
+        console.error("Erro ao carregar produtos do backend:", error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', carregarProdutosBackend);

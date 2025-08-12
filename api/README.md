@@ -8,6 +8,11 @@ npm i express cors dotenv
 npx prisma init --datasource-provider mysql
 ```
 
+# Biaxar a autenticação de token 
+```
+npm install jsonwebtoken
+```
+
 # Necessário
 - Altere o endereço do arquivo **.env** para:   
 ```js

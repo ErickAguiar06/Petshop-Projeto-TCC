@@ -12,14 +12,22 @@ header {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 body {
     margin: 0;
     padding: 0;
     background-color:   #18233d;
     font-family: Arial, sans-serif;
+}
+
+.logo img {
+  height: 140px; 
+  border-radius: 10px;
+
 }
 
 

@@ -9,6 +9,8 @@ const autenticarJWT = require('./middleware/auth');
 // Rotas de usuário
 rota.post('/usuarios', usu.create);
 rota.post('/login', usu.login);
+rota.post('/recuperar-senha', usu.solicitarRecuperacao);
+rota.post('/resetar-senha', usu.resetarSenha);
 
 // Rotas de produto
 rota.post('/produtos', produto.create);

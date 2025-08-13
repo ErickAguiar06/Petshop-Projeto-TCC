@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
     
 }
 
@@ -236,25 +235,19 @@ nav ul li a:hover {
   display: flex;
   gap: 20px;
   flex-wrap: nowrap;
-  overflow: hidden;
-  align-items: stretch;
-  position: relative;
-  overflow-x: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
 }
 
 .product {
   min-width: 250px;
-  flex: 0 0 auto;
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
   text-align: center;
-  width: 250px;
-  position: relative;
-  margin-bottom: 20px;
-    overflow-x: hidden;
+  flex: 0 0 auto;
 }
 .product:hover {
   transform: translateY(-5px);
@@ -340,15 +333,15 @@ element.style {
     left: -25px;
 }
 
-
  /* Estilo da seção de Produtos Recomendados */
-  .best-seller {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 20px;
-  }
 
+.best-seller {
+  margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fdfaf4; /* mesma cor do fundo do site? */
+}
   .best-seller h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -364,17 +357,17 @@ element.style {
   }
 
   /* Estilo dos Produtos */
-  .product {
-    flex: 0 0 auto;
-    width: 250px;
-    display: inline;
-    margin: 0 10px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    background: #fff;
-    position: relative;
-  }
+.product {
+  flex: 0 0 auto;
+  width: 250px;
+  display: inline;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
 
   /* Etiqueta de Desconto */
   .discount-tag {

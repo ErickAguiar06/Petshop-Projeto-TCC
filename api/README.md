@@ -10,7 +10,7 @@ npx prisma init --datasource-provider mysql
 
 # Baixe todas as dependencias de uma vez
 ```bash
-npm install express cors dotenv prisma jsonwebtoken nodemailer stripe
+npm install express cors dotenv prisma jsonwebtoken nodemailer stripe bcrypt
 ```
 
 # Biaxar a autenticação de token 

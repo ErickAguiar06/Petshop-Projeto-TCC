@@ -3,9 +3,13 @@ datasource db {
   url      = "mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
 }
 
-
 generator client {
   provider = "prisma-client-js"
+}
+
+enum Tipo {
+  ADMIN
+  CLIENTE
 }
 
 model Usuario {
@@ -14,16 +18,17 @@ model Usuario {
   email    String   @unique
   telefone String
   senha    String
+  tipo     Tipo     @default(CLIENTE) // padrão será CLIENTE
   pedidos  Pedido[]
 }
 
 model Produto {
-  id       Int              @id @default(autoincrement())
-  nome     String
+  id        Int              @id @default(autoincrement())
+  nome      String
   descricao String
-  preco    Float
-  alt      String
-  itens    PedidoProduto[]
+  preco     Float
+  alt       String
+  itens     PedidoProduto[]
 }
 
 model Pedido {

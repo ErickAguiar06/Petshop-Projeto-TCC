@@ -57,7 +57,10 @@
       <div class="input-icon">
         <i class="fas fa-lock"></i>
         <input type="password" placeholder="Senha" name="senha" required />
+        <br>
       </div>
+       <a href="#" id="esqueceuSenha" style="display:block; margin-top:10px; color:#f90;">Esqueceu sua senha?</a>
+       <br>
       <button type="submit">Entrar</button>
     </form>
   </div>
@@ -77,6 +80,19 @@
     </div>
   </div>
 </div>
+
+<!-- Modal Recuperar Senha -->
+<div id="modalRecuperarSenha" class="modal">
+  <div class="modal-content">
+    <span id="fecharModalRecuperar" class="close">&times;</span>
+    <h2>Recuperar Senha</h2>
+    <form id="formRecuperarSenha">
+      <input type="email" name="emailRecuperacao" placeholder="Digite seu email" required />
+      <button type="submit">Enviar link de recuperação</button>
+    </form>
+  </div>
+</div>
+
 
 <script src="assets/js/login.js"></script>
 </body>

@@ -171,6 +171,34 @@ button:active {
   transform: scale(0.95);
 }
 
+.modal {
+  display: none; /* Esconde por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.close {
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+}
+
+
 .overlay-container {
   position: absolute;
   top: 0;

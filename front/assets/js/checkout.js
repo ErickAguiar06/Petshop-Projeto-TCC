@@ -41,6 +41,7 @@ window.alterarQtd = function(idx, delta) {
   let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
   carrinho[idx].quantidade += delta;
   if (carrinho[idx].quantidade < 1) carrinho[idx].quantidade = 1;
+  if (carrinho[idx].quantidade > 25) carrinho[idx].quantidade = 25; 
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
   atualizarTabelaCarrinho();
 };

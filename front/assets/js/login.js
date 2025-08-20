@@ -1,31 +1,13 @@
-const uri = 'http://localhost:3000'; 
+const uri = 'http://localhost:3000';
 
-async function loginUsuario(email, senha) {
-    try {
-        const response = await fetch('http://localhost:3000/login', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, senha })
-        });
-        const data = await response.json();
-        if (response.ok && data.token) {
-            localStorage.setItem('token', data.token);
-            window.location.href = 'produtos.html'; // Redireciona para página de produtos
-        } else {
-            alert(data.message || 'Email ou senha inválidos.');
-        }
-    } catch (err) {
-        alert('Erro ao fazer login.');
-    }
-}
-
-function login() {
-    const form = document.querySelector('#formLogin');
-    form.addEventListener('submit', async (e) => {
+document.addEventListener('DOMContentLoaded', () => {
+    // === LOGIN ===
+    const formLogin = document.querySelector('#formLogin');
+    formLogin.addEventListener('submit', async (e) => {
         e.preventDefault();
         const dados = {
-            email: form.email.value,
-            senha: form.senha.value,
+            email: formLogin.email.value,
+            senha: formLogin.senha.value,
         };
         try {
             const response = await fetch(`${uri}/login`, {
@@ -35,71 +17,100 @@ function login() {
             });
             const data = await response.json();
             if (response.ok) {
-                localStorage.setItem('token', data.token); // Salva o token
+                localStorage.setItem('token', data.token);
                 alert('Login bem-sucedido!');
                 window.location.href = '../index.html';
             } else {
                 alert(data.message || 'Email ou senha inválidos.');
             }
-        } catch (err) {
+        } catch {
             alert('Erro ao fazer login.');
         }
     });
-}
 
-// Animação da label
-document.querySelectorAll('.user-box input').forEach(input => {
-    if (input.value !== "") input.classList.add('not-empty');
-    input.addEventListener('input', () => {
-        if (input.value !== "") {
-            input.classList.add('not-empty');
-        } else {
-            input.classList.remove('not-empty');
+    // === CADASTRO ===
+    document.getElementById("formCadastro").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const nome = e.target.nome.value;
+        const email = e.target.email.value;
+        const telefone = e.target.telefone.value;
+        const senha = e.target.senha.value;
+
+        try {
+            const response = await fetch(`${uri}/usuarios`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nome, email, telefone, senha }),
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                alert("Usuário cadastrado com sucesso!");
+                container.classList.remove("right-panel-active");
+            } else {
+                alert(data.message || "Erro ao cadastrar.");
+            }
+        } catch (err) {
+            console.error("Erro ao cadastrar:", err);
+            alert("Erro ao cadastrar.");
+        }
+    });
+
+    // === TROCA ENTRE LOGIN E CADASTRO ===
+    const signUpButton = document.getElementById("signUp");
+    const signInButton = document.getElementById("signIn");
+    const container = document.getElementById("container");
+
+    signUpButton.addEventListener("click", () => container.classList.add("right-panel-active"));
+    signInButton.addEventListener("click", () => container.classList.remove("right-panel-active"));
+
+    // === RECUPERAR SENHA ===
+    const esqueceuSenha = document.getElementById("esqueceuSenha");
+    const modalRecuperarSenha = document.getElementById("modalRecuperarSenha");
+    const fecharModalRecuperar = document.getElementById("fecharModalRecuperar");
+    const formRecuperarSenha = document.getElementById("formRecuperarSenha");
+
+    esqueceuSenha.addEventListener("click", (e) => {
+        e.preventDefault();
+        modalRecuperarSenha.style.display = "flex";
+    });
+
+    fecharModalRecuperar.addEventListener("click", () => {
+        modalRecuperarSenha.style.display = "none";
+    });
+
+    modalRecuperarSenha.addEventListener("click", (e) => {
+        if (e.target === modalRecuperarSenha) {
+            modalRecuperarSenha.style.display = "none";
+        }
+    });
+
+    formRecuperarSenha.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = formRecuperarSenha.emailRecuperacao.value.trim();
+
+        if (!email) {
+            alert("Por favor, insira seu email.");
+            return;
+        }
+
+        try {
+            const response = await fetch(`${uri}/recuperar-senha`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email })
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                alert(data.message || 'Se o email estiver cadastrado, você receberá um link para redefinir sua senha.');
+                modalRecuperarSenha.style.display = 'none';
+                formRecuperarSenha.reset();
+            } else {
+                alert(data.error || 'Erro ao solicitar recuperação.');
+            }
+        } catch (err) {
+            alert('Erro ao solicitar recuperação.');
         }
     });
 });
-
-
-const signUpButton = document.getElementById("signUp");
-const signInButton = document.getElementById("signIn");
-const container = document.getElementById("container");
-
-signUpButton.addEventListener("click", () => {
-  container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener("click", () => {
-  container.classList.remove("right-panel-active");
-});
-
-// Cadastro
-document.getElementById("formCadastro").addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const nome = e.target.nome.value;
-  const email = e.target.email.value;
-  const telefone = e.target.telefone.value; // Adicionado telefone
-  const senha = e.target.senha.value;
-
-  try {
-    const response = await fetch("http://localhost:3000/usuarios", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nome, email, telefone, senha }), // Incluído telefone
-    });
-
-    const data = await response.json();
-    if (response.ok) {
-      alert("Usuário cadastrado com sucesso!");
-      const container = document.getElementById("container");
-      container.classList.remove("right-panel-active");
-    } else {
-      alert(data.message || "Erro ao cadastrar.");
-    }
-  } catch (err) {
-    console.error("Erro ao cadastrar:", err);
-    alert("Erro ao cadastrar.");
-  }
-});
-
-document.addEventListener('DOMContentLoaded', login);

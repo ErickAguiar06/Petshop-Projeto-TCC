@@ -20,12 +20,12 @@
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
     "nodemailer": "^7.0.5",
-    "stripe": "^18.3.0"
+    "stripe": "^18.4.0"
   },
   "keywords": [],
   "description": "```bash\r cd api\r npm i prisma -g\r npm init -y\r npm i express cors dotenv\r npx prisma init --datasource-provider mysql\r ```",
   "devDependencies": {
-    "prisma": "^6.8.2"
+    "prisma": "^6.15.0"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

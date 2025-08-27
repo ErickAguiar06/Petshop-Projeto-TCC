@@ -66,7 +66,7 @@
         "preco": 29.90,
         "precoAntigo": 35.00,
         "imagem": "assets/img/prod6.jpg",
-        "alt": "Aquário Curvo Boyu Led EA-80E 95L",
+        "alt": "Aquário Boyu Led EA-80E 95L",
         "button": "Adicionar ao Carrinho"
     },
     {
@@ -76,7 +76,7 @@
         "preco": 34.90,
         "precoAntigo": 40.00,
         "imagem": "assets/img/prod7.jpg",
-        "alt": "Aquário Boyu Curvo 60 99 Litros",
+        "alt": "Aquário Boyu 60 99 Litros",
         "button": "Adicionar ao Carrinho"
     },
     {
@@ -86,10 +86,30 @@
         "preco": 22.90,
         "precoAntigo": 28.00,
         "imagem": "assets/img/prod8.jpg",
-        "alt": "Aquário Curvo Boyu Led EA-60E 68L",
+        "alt": "Aquário Curvo Led EA-60E 68L",
         "button": "Adicionar ao Carrinho"
     },
     {
+        "id": 110,
+        "nome": "Alcon Premium",
+        "descricao": "Ração premium para peixes de aquário.",
+        "preco": 44.90,
+        "precoAntigo": 52.00,
+        "imagem": "assets/img/prod9.jpg",
+        "alt": "Aquário de Vidro Retangular",
+        "button": "Adicionar ao Carrinho"
+    },
+     {
+        "id": 110,
+        "nome": "Alcon Premium",
+        "descricao": "Ração premium para peixes de aquário.",
+        "preco": 44.90,
+        "precoAntigo": 52.00,
+        "imagem": "assets/img/prod9.jpg",
+        "alt": "Aquário de Vidro Retangular",
+        "button": "Adicionar ao Carrinho"
+    },
+     {
         "id": 110,
         "nome": "Alcon Premium",
         "descricao": "Ração premium para peixes de aquário.",

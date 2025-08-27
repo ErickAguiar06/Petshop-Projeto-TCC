@@ -21,7 +21,7 @@ DATABASE_URL="mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=465
 EMAIL_USER=petshop4patas.oficial01@gmail.com
-EMAIL_PASS=qjrwyylutbpwwbwr
+EMAIL_PASS=###########
 
 ```
 # Se necessário use:

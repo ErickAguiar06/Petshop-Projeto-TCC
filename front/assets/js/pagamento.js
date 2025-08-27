@@ -1,4 +1,4 @@
-const stripe = Stripe('pk_test_51RkRYN2NDHd3ApIM28O0QMgeTuYzJyVi3xUthi7yEksdPT8ltr2V7BvSPLF1vCGpjl6klHKjktDmECqENQa9wVyp006x4eSinZ');
+const stripe = Stripe('pk_test_51RhLX8EKH8PZEo1DXBoRTGpT7j8M2E3jRwm8N7bQDr7dZQNcfeYE2SUYk4mfUZscWE9z7DKGchl77NDwDAohgVrN00mI4Y59Kz');
 
 initialize();
 

@@ -58,8 +58,9 @@ body {
 }
 
 .nav-list a:hover {
-  color: var(--accent-color);
+  color: #ffeb3b;
 }
+
 
 .main-content {
   padding-top: 100px;

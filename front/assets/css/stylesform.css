@@ -12,10 +12,11 @@ header {
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
      display: flex;
   align-items: center;
+
 }
 .logo img {
   height: 250px; 
@@ -75,26 +76,25 @@ body {
     background-color:#28a745;
 }
 
-
 .products {
     display: flex;
     justify-content: center;
     gap: 20px;
-    
 }
 
 .product {
-    height: 550px;
-    width: 275px;
+    height: auto; /* Removido valor fixo para permitir ajuste dinâmico */
+    width: 230px;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .product:hover {
@@ -102,23 +102,44 @@ body {
 }
 
 .product img {
-    width: 200px;
     border-radius: 8px;
-    margin-bottom: 15px;
-    
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .product p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    height: 20px;
+    min-height: 50px; /* Dá espaço para descrições maiores */
+    margin: 0;
 }
 
-.product span {
-    display: block;
-    font-size: 20px;
-    color: #929292;
-    margin: 5px 0;
+.product .price-old {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #888;
+}
+
+.product .price-new {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E53935;
+}
+
+.product button {
+    background-color: #FFEB3B;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto; /* <-- Força o botão a ir para o final do flex container */
+}
+
+
+.product button:hover {
+    background-color: #FDD835;
 }
 
 .screen-reader-text1 {
@@ -129,6 +150,7 @@ body {
 .product .btn {
     margin-top: 10px;
 }
+
 
 #carrinho-topo {
   background: #3c3b3af7;
@@ -153,6 +175,13 @@ body {
   background: #fdd835;
 }
 
+#frase-menu {
+    font-size: 20px;
+    color: #c4520c;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 
 button {
     display: inline-block;

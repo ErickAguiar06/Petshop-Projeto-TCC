@@ -13,16 +13,16 @@ npx prisma init --datasource-provider mysql
 npm install express cors dotenv prisma jsonwebtoken nodemailer stripe bcrypt
 ```
 
-# Biaxar a autenticação de token 
-```
-npm install jsonwebtoken
-```
-
 # Necessário
 - Altere o endereço do arquivo **.env** para:   
 ```js
 STRIPE_SECRET_KEY=(chave secreta da conta Stripe)
 DATABASE_URL="mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=465
+EMAIL_USER=petshop4patas.oficial01@gmail.com
+EMAIL_PASS=qjrwyylutbpwwbwr
+
 ```
 # Se necessário use:
 ```bash

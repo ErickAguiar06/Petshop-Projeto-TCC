@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -36,12 +36,6 @@ header {
   display: flex;
   align-items: center;
 }
-    .carousel-container {
-     padding: 80px;
-      position: relative;
-      max-width: 100%;
-      overflow-x: hidden;
-    }
     .carousel-track {
       display: flex;
       transition: transform 0.3s ease-in-out;
@@ -229,26 +223,34 @@ nav ul li a:hover {
 .product .btn {
     margin-top: 10px;
 }
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
 /* Produtos */
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
 .products {
   display: flex;
-  gap: 20px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 10px 0;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+  border-radius: 60px;
 }
 
 .product {
-  min-width: 250px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  flex: 0 0 auto;
+  min-width: 250px; /* ou o valor exato da largura do card */
+  margin-right: 20px; /* ajuste conforme seu layout */
+  flex-shrink: 0; /* IMPEDIR que o card encolha */
+  box-sizing: border-box;
+  border-radius: 5%;
 }
+
 .product:hover {
   transform: translateY(-5px);
 }

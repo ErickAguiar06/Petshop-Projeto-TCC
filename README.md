@@ -1,6 +1,6 @@
 # Documentação - Petshop 4 Patas 🐾
 
-Este repositório contém toda a documentação referente ao projeto **Petshop 4 Patas**.
+Este repositório contém toda a documentação referente ao projeto **Petshop 4 Patas**..
 
 ---
 

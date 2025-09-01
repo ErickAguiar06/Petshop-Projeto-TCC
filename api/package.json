@@ -19,8 +19,8 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
-    "nodemailer": "^7.0.5",
-    "stripe": "^18.4.0"
+    "nodemailer": "^7.0.6",
+    "stripe": "^18.5.0"
   },
   "keywords": [],
   "description": "```bash\r cd api\r npm i prisma -g\r npm init -y\r npm i express cors dotenv\r npx prisma init --datasource-provider mysql\r ```",

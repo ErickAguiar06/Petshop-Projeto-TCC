@@ -1,6 +1,22 @@
 const uri = 'http://localhost:3000';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // === MOSTRAR/OCULTAR SENHA ===
+    function setupToggleSenha(inputId, toggleId) {
+        const input = document.getElementById(inputId);
+        const toggle = document.getElementById(toggleId);
+        let mostrando = false;
+        const iconeAberto = 'https://img.icons8.com/?size=100&id=60022&format=png&color=000000';
+        const iconeFechado = 'https://img.icons8.com/?size=100&id=100236&format=png&color=000000';
+        toggle.addEventListener('click', () => {
+            mostrando = !mostrando;
+            input.type = mostrando ? 'text' : 'password';
+            toggle.src = mostrando ? iconeFechado : iconeAberto;
+            toggle.alt = mostrando ? 'Ocultar senha' : 'Mostrar senha';
+        });
+    }
+    setupToggleSenha('senhaCadastro', 'toggleSenhaCadastro');
+    setupToggleSenha('senhaLogin', 'toggleSenhaLogin');
     // === LOGIN ===
     const formLogin = document.querySelector('#formLogin');
     formLogin.addEventListener('submit', async (e) => {

@@ -44,17 +44,17 @@
     "preco": 38.90,
     "precoAntigo": 44.90,
     "imagem": "assets/img/pas5.webp",
-    "alt": "Suplemento Pet",
+    "alt": "Nutrópica",
     "button": "Adicionar ao Carrinho"
   },
   {
     "id": 126,
-    "nome": "Ração para Calopsita Mix Megazoo 300 g",
+    "nome": "Natural Papagaio Nutrópica 600 g",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 24.90,
     "precoAntigo": 29.90,
-    "imagem": "assets/img/pas1.png",
-    "alt": "Megazoo",
+    "imagem": "assets/img/pas11.webp",
+    "alt": "Nutrópica",
     "button": "Adicionar ao Carrinho"
   },
   {
@@ -73,7 +73,7 @@
     "preco": 31.99,
     "precoAntigo": 35.90,
     "imagem": "assets/img/pas8.jpg",
-    "alt": "Suplemento Pet",
+    "alt": "Megazoo",
     "button": "Adicionar ao Carrinho"
   },
   {
@@ -83,7 +83,7 @@
     "preco": 56.79,
     "precoAntigo": 61.90,
     "imagem": "assets/img/pas9.jpg",
-    "alt": "Suplemento Pet",
+    "alt": "Megazoo",
     "button": "Adicionar ao Carrinho"
   },
   {
@@ -93,7 +93,27 @@
     "preco": 36.90,
     "precoAntigo": 40.90,
     "imagem": "assets/img/pas10.jpg",
-    "alt": "Suplemento Pet",
+    "alt": "Megazoo",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 131,
+    "nome": "Ração Extrusada Megazoo Regular Bits para Calopsitas e Ring Necks",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 24.90,
+    "precoAntigo": 24.90,
+    "imagem": "assets/img/pas1.png",
+    "alt": "Megazoo",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 132,
+    "nome": "Ração Extrusada Megazoo para Papagaio Regular 600g",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 38.60,
+    "precoAntigo": 44.90,
+    "imagem": "assets/img/pas12.jpg",
+    "alt": "Megazoo",
     "button": "Adicionar ao Carrinho"
   }
 ]

@@ -6,7 +6,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color:	#000000;
+    background-color:	#18233d;
     padding: 20px 10%;
     color: #fff;
 }
@@ -18,9 +18,10 @@ header {
 body {
     margin: 0;
     padding: 0;
-    background-color: #5ce1e6;
+    background-color: #18233d;
     font-family: Arial, sans-serif;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -133,8 +134,9 @@ button.fechar:hover {
     color: #333;
 }
 
+
 .banner {
-    background: url('../img/Produtos.png') no-repeat center center;
+    background: url('../img/alcon.png') no-repeat center center;
     background-size: cover; 
     display: block;
     height: 410px; 
@@ -144,7 +146,6 @@ button.fechar:hover {
     text-align: center;
     color: rgb(0, 0, 0);
 }
-
 
 
 .menu-toggle {
@@ -268,7 +269,6 @@ button.fechar:hover {
 
   main{
      margin: 110px;
-     align-items: center;
   }
   .cards-container {
     display: grid;
@@ -290,7 +290,6 @@ button.fechar:hover {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     transition: transform 0.2s;
 }
 
@@ -340,7 +339,6 @@ button.fechar:hover {
 .card button:hover {
     background-color: #fdd835;
 }
-
 
 
 @media (max-width: 768px) {

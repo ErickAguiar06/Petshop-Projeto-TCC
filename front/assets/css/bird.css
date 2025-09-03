@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: 	#000000;
+    background: linear-gradient(90deg, #14680c 0%, #5b911f 100%);
     padding: 20px 10%;
     color: #fff;     
 }
@@ -14,7 +14,7 @@ header {
 body {
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background: linear-gradient(90deg, #5b911f 0%, #14680c 100%);
     font-family: Arial, sans-serif;
 }
 
@@ -130,7 +130,7 @@ button.fechar:hover {
 }
 
 .banner {
-    background: url('../img/bghj.png') no-repeat center center;
+    background: url('../img/bnps.jpg') no-repeat center center;
     background-size: cover; 
     display: block;
     height: 410px; 
@@ -138,13 +138,13 @@ button.fechar:hover {
     max-width: 100%;
     padding: 0;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #14680c;
 }
 .menu-toggle {
     font-size: 30px;
     padding: 10px;
-    background-color: #f4a213;
-    color: white;
+    background-color: #fff;
+    color: #5b911f;
     cursor: pointer;
     position: fixed;
     top: 10px;
@@ -264,56 +264,74 @@ button.fechar:hover {
   }
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
     max-width: 1200px;
-    margin: 0 auto; /* centraliza horizontalmente */
-  }
-
-  .card {
-    height: 500px;
-    width: 250px;
-    margin: 20px;
-    padding: 20px;
+    margin: 0 auto;
+}
+.card {
+    height: 400px; /* igual ao .card */
+    width: 200px;  /* igual ao .card */
+    margin: 10px;
+    padding: 16px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgb(255, 255, 255); /* mantido igual ao .card */
     text-align: center;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
+    transition: transform 0.2s;
+}
+
 .card:hover {
     transform: translateY(-5px);
 }
 
-  
-  .card img {
+.card img {
     width: 100%;
-    height: 220px;
+    height: 160px; /* igual ao .card */
     object-fit: contain;
     border-radius: 10px;
-    margin-bottom: 15px;
-  }
+    margin-bottom: 10px;
+}
 
-  .add-to-cart-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #ffeb3b; 
-    color: #333; 
-    text-decoration: none;
+.card p {
+    font-size: 15px;
     font-weight: bold;
+    min-height: 50px;
+    margin: 0;
+}
+
+.card .price-old {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #888;
+}
+
+.card .price-new {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E53935;
+}
+
+.card button {
+    background-color: #FFEB3B;
+    color: #000;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: auto;
     transition: 0.3s;
 }
 
-.add-to-cart-button:hover {
-    background-color: #ffeb3b;
+.card button:hover {
+    background-color: #fdd835;
 }
+
 
 
 @media (max-width: 768px) {

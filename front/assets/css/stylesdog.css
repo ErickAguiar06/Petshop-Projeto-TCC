@@ -62,8 +62,6 @@ body {
 .menu-toggle.active{
     left: 250px;
 }
-
-
 .slide-menu ul {
     list-style: none;
     padding: 0;
@@ -184,6 +182,14 @@ body {
 
 #carrinho-topo:hover {
   background: #fdd835;
+}
+
+#frase-menu {
+    font-size: 20px;
+    color: #c4520c;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 

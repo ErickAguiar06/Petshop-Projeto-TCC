@@ -42,5 +42,5 @@ npx prisma db seed
 
 # Rodar o servidor 
 ```bash
-npx nodmeon
+npx nodemon
 ```

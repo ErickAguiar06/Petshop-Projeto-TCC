@@ -23,7 +23,6 @@ body {
     transition: var(--hover-timing);
 
     background: var(--light-01);
-	
 	width: 100vw;
 	overflow-x: hidden;
 

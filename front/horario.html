@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendar Horário</title>
+    <link rel="stylesheet" href="assets/css/horario.css">
+</head>
+<body>
+<header>
+    <div class="logo"> 
+    <img src="/front/assets/img/4patas.png" alt="Logo 4 Patas"> Petshop 4 Patas
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/index.html"><i class=" fas fa-concierge-bell"></i>Início</a></li>
+            <li><a href="/front/negocios.html"><i class="fas fa-tags"></i>Serviços</a></li>
+            <li><a href="/front/sobre.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            <li><a href="/front/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section class="agendamento-container">
+            <form class="agendamento-form">
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione</option>
+                    <option value="banho">Banho</option>
+                    <option value="tosa">Tosa Higienica</option>
+                    <option value="consultoria">Consultoria</option>
+                </select>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora" required min="08:00" max="18:00">
+
+                <button type="submit">Agendar</button>
+            </form>
+            <div id="mensagem-sucesso" class="mensagem-sucesso" style="display:none;">
+                Agendamento realizado com sucesso!
+            </div>
+        </section>
+    </main>
+
+
+<script>
+    const form = document.querySelector('.agendamento-form');
+    const mensagem = document.getElementById('mensagem-sucesso');
+
+    // Lista de feriados fixos nacionais (formato YYYY-MM-DD)
+    const feriados = [
+        '2025-01-01',
+        '2025-04-21',
+        '2025-05-01',
+        '2025-09-07',
+        '2025-10-12',
+        '2025-11-02',
+        '2025-11-15',
+        '2025-12-25'
+    ];
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const servico = document.getElementById('servico').value;
+        const data = document.getElementById('data').value;
+        const hora = document.getElementById('hora').value;
+
+        if (!data || !hora || !servico) {
+            alert("Por favor, preencha todos os campos.");
+            return;
+        }
+
+        // Verificação do horário permitido
+        if (hora < "08:00" || hora > "18:00") {
+            alert("Horário permitido é entre 08:00 e 18:00.");
+            return;
+        }
+
+        const dataHoraSelecionada = new Date(`${data}T${hora}`);
+        const agora = new Date();
+
+        // Verifica se a data é válida
+        if (isNaN(dataHoraSelecionada.getTime())) {
+            alert("Data ou hora inválida.");
+            return;
+        }
+
+        // Impede agendamento no passado
+        if (dataHoraSelecionada <= agora) {
+            alert("Você não pode agendar para o passado. Escolha uma data e hora futura.");
+            return;
+        }
+
+        // Impede qualquer data que não seja do ano de 2025
+        const anoSelecionado = dataHoraSelecionada.getFullYear();
+        if (anoSelecionado !== 2025) {
+            alert("Somente agendamentos dentro do ano de 2025 são permitidos.");
+            return;
+        }
+
+        // Impede agendamento aos domingos
+        if (dataHoraSelecionada.getDay() === 0) {
+            alert("Agendamentos não são permitidos aos domingos.");
+            return;
+        }
+
+        // Impede agendamento em feriados
+        if (feriados.includes(data)) {
+            alert("Agendamentos não são permitidos em feriados.");
+            return;
+        }
+
+        // Agendamento válido – salvar no localStorage
+        const agendadoEm = agora.toLocaleString('pt-BR');
+        const agendamentos = JSON.parse(localStorage.getItem('agendamentos')) || [];
+        agendamentos.push({ servico, data, hora, agendadoEm });
+        localStorage.setItem('agendamentos', JSON.stringify(agendamentos));
+
+        // Mensagem de sucesso
+        mensagem.style.display = 'block';
+        form.reset();
+        setTimeout(() => mensagem.style.display = 'none', 3000);
+    });
+
+    // Define data mínima no campo como hoje
+    window.addEventListener('DOMContentLoaded', () => {
+        const inputData = document.getElementById('data');
+        const hoje = new Date().toISOString().split('T')[0];
+        inputData.min = hoje;
+    });
+</script>
+
+
+</body>
+</html>

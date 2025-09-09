@@ -46,6 +46,10 @@ function fecharCarrinho() {
     const painel = document.getElementById('carrinho-sidebar');
     painel.classList.remove('ativo');
 }
+function verHorario() {
+    window.location.href = "horario.html"; 
+    painel.classList.add('ativo');
+}
 
 // Carregar os serviços do JSON
 fetch("assets/json/negocios.json")

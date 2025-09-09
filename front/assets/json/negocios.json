@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "Banho Completo",
+    "descricao": "Banho com produtos especiais para saúde da pele e pelos.",
+    "preco": 50.00,
+    "precoAntigo": 65.00,
+    "imagem": "assets/img/tosa.jpg",
+    "alt": "Banho em cachorro",
+    "button": "Agendar"
+  },
+  {
+    "id": 2,
+    "nome": "Tosa Higienica",
+    "descricao": "Tosa higiênica para maior conforto e bem-estar.",
+    "preco": 40.00,
+    "precoAntigo": 55.00,
+    "imagem": "assets/img/alcon.png",
+    "alt": "Tosa em cachorro",
+    "button": "Agendar"
+  },
+  {
+    "id": 3,
+    "nome": "Consulta Veterinária",
+    "descricao": "Atendimento completo com médico veterinário especializado.",
+    "preco": 120.00,
+    "precoAntigo": 150.00,
+    "imagem": "assets/img/alcon3.webp",
+    "alt": "Consulta veterinária",
+    "button": "Agendar"
+  }
+]

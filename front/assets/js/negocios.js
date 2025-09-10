@@ -1,11 +1,10 @@
 const main = document.querySelector('#lista-servicos');
 let servicos = [];
 
-// Função para adicionar ao carrinho
 function adicionarAoCarrinho(id, nome, descricao, preco, imagem) {
     let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    const index = carrinho.findIndex(item => item.id === id);
 
-    const index = carrinho.findIndex((item) => item.id === id);
     if (index !== -1) {
         carrinho[index].quantidade += 1;
     } else {
@@ -16,7 +15,6 @@ function adicionarAoCarrinho(id, nome, descricao, preco, imagem) {
     mostrarPainelLateral(nome, imagem);
 }
 
-// Função para mostrar o painel lateral
 function mostrarPainelLateral(nomeProduto, imagemProduto) {
     const painel = document.getElementById('carrinho-sidebar');
     const textoProduto = document.getElementById('produto-adicionado');
@@ -25,9 +23,7 @@ function mostrarPainelLateral(nomeProduto, imagemProduto) {
     textoProduto.textContent = nomeProduto;
 
     const imagemExistente = painel.querySelector('.imagem-produto-adicionado');
-    if (imagemExistente) {
-        imagemExistente.remove();
-    }
+    if (imagemExistente) imagemExistente.remove();
 
     imagemElemento.src = imagemProduto;
     imagemElemento.alt = nomeProduto;
@@ -35,55 +31,53 @@ function mostrarPainelLateral(nomeProduto, imagemProduto) {
     textoProduto.insertAdjacentElement('beforebegin', imagemElemento);
 
     painel.classList.add('ativo');
-
-    setTimeout(() => {
-        painel.classList.remove('ativo');
-    }, 5000);
+    setTimeout(() => painel.classList.remove('ativo'), 5000);
 }
 
-// Função para fechar o carrinho
 function fecharCarrinho() {
-    const painel = document.getElementById('carrinho-sidebar');
-    painel.classList.remove('ativo');
+    document.getElementById('carrinho-sidebar').classList.remove('ativo');
 }
+
 function verHorario() {
-    window.location.href = "horario.html"; 
-    painel.classList.add('ativo');
+    window.location.href = "horario.html";
 }
 
-// Carregar os serviços do JSON
 fetch("assets/json/negocios.json")
-    .then(response => response.json())
-    .then(data => {
-        servicos = data;
-        exibirCards();
-    })
-    .catch(error => console.error("Erro ao carregar JSON:", error));
-
-// Função para exibir os cards dos serviços
+  .then(response => response.json())
+  .then(data => {
+    servicos = data;
+    exibirCards();
+  })
+  .catch(error => console.error("Erro ao carregar JSON:", error));
 function exibirCards() {
-    servicos.forEach(servico => {
-        const precoAntigo = servico.precoAntigo.toFixed(2).replace('.', ',');
-        const preco = servico.preco.toFixed(2).replace('.', ',');
+  servicos.forEach(servico => {
+    const precoAntigo = servico.precoAntigo.toFixed(2).replace('.', ',');
+    const preco = servico.preco.toFixed(2).replace('.', ',');
 
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.innerHTML = `
-            <img src="${servico.imagem}" alt="${servico.alt}">
-            <h2>${servico.nome}</h2>
-            <p>${servico.descricao}</p>
-            <p>
-              <span style="text-decoration: line-through; color: gray;">R$ ${precoAntigo}</span><br>
-              <span style="color: #c4520c; font-weight: bold;">R$ ${preco}</span>
-            </p>
-            <button class="add-to-cart-button">${servico.button}</button>
-        `;
+    const card = document.createElement('div');
+    card.classList.add('card');
 
-        const button = card.querySelector('.add-to-cart-button');
-        button.addEventListener('click', () => {
-            adicionarAoCarrinho(servico.id, servico.nome, servico.descricao, servico.preco, servico.imagem);
-        });
+    card.innerHTML = `
+      <img src="${servico.imagem}" alt="${servico.alt}">
+      <h2>${servico.nome}</h2>
+      <p>${servico.descricao}</p>
+      <p>
+        <span style="text-decoration: line-through; color: gray;">R$ ${precoAntigo}</span><br>
+        <span style="color: #c4520c; font-weight: bold;">R$ ${preco}</span>
+      </p>
+      <button class="agendar-button">Agendar</button>
+    `;
 
-        main.appendChild(card);
+    // Aqui você seleciona o botão dentro do card
+    const agendarBtn = card.querySelector('.agendar-button');
+
+    // E agora adiciona o evento corretamente
+    agendarBtn.addEventListener('click', () => {
+      localStorage.setItem('servicoSelecionado', JSON.stringify(servico));
+      window.location.href = "horario.html";
     });
+
+    main.appendChild(card);
+  });
 }
+

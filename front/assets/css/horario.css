@@ -7,10 +7,21 @@ main {
     padding: 0 40px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefaf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 
 header {
     display: flex;
-    height: 50px;
+    height: 30px;
     justify-content: space-between;
     align-items: center;
     background-color: #c4520c;
@@ -41,7 +52,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin-right: 200px;
+    margin-right: 0%;
     padding-right: 80px;
 }
 
@@ -55,18 +66,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffeb3b;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fefaf4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .agendamento-container {
     background-color: #fff;
     padding: 60px 60px;
@@ -140,3 +139,4 @@ button[type="submit"]:hover {
     font-weight: bold;
     text-align: center;
 }
+

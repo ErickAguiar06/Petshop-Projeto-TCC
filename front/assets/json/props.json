@@ -10,7 +10,7 @@
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 122,
+    "id": 132,
     "nome": " Malha Fina - 100ml",
     "preco": 269.99,
     "precoAntigo": 289.99,
@@ -19,7 +19,7 @@
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 123,
+    "id": 133,
     "nome": "Malha Fina - 300ml",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 34.19,
@@ -29,7 +29,7 @@
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 124,
+    "id": 134,
     "nome": "Comedouro Automático Grande - Malha Larga",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 86.00,
@@ -39,51 +39,51 @@
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 125,
-    "nome": "Ração Nutrópica Sementes e Extrusados Natural para Calopsitas 300 g",
-    "preco": 38.90,
-    "precoAntigo": 44.90,
-    "imagem": "assets/img/pas5.webp",
-    "alt": "Nutrópica",
+    "id": 135,
+    "nome": "Porta Vitaminas",
+    "preco": 2.50,
+    "precoAntigo": 5.00,
+    "imagem": "assets/img/propos.webp",
+    "alt": "Porta Vitaminas",
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 126,
-    "nome": "Natural Papagaio Nutrópica 600 g",
+    "id": 136,
+    "nome": "Porta Frutas - Milho",
     "descricao": "A ração perfeita para sua tartaruga",
-    "preco": 24.90,
-    "precoAntigo": 29.90,
-    "imagem": "assets/img/pas11.webp",
-    "alt": "Nutrópica",
+    "preco": 3.90,
+    "precoAntigo": 8.90,
+    "imagem": "assets/img/propos1.webp",
+    "alt": "Porta Frutas",
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 127,
-    "nome": "Ração Extrusada Megazoo para Calopsitas Soft 350 g",
-    "preco": 49.90,
-    "precoAntigo": 55.00,
-    "imagem": "assets/img/pas7.jpg",
-    "alt": "Megazoo",
+    "id": 137,
+    "nome": "Gaiola Criadeira - Malha Fina",
+    "preco": 320.90,
+    "precoAntigo": 349.99,
+    "imagem": "assets/img/gaiola.webp",
+    "alt": "Gaiola Criadeira",
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 128,
-    "nome": "Ração Megazoo para Calopsitas e Periquitos",
+    "id": 138,
+    "nome": "Gaiola N.8 Imbuia - Marchetada - Inox",
     "descricao": "A ração perfeita para sua tartaruga",
-    "preco": 31.99,
-    "precoAntigo": 35.90,
-    "imagem": "assets/img/pas8.jpg",
-    "alt": "Megazoo",
+    "preco": 720.00,
+    "precoAntigo": 750.00,
+    "imagem": "assets/img/gaiola1.webp",
+    "alt": "Gaiola N.8",
     "button": "Adicionar ao Carrinho"
   },
   {
-    "id": 129,
-    "nome": "Ração Megazoo Mix Calopsitas Tropical",
+    "id": 139,
+    "nome": "Gaiola para Calopsita com Pedestal - Completa",
     "descricao": "A ração perfeita para sua tartaruga",
-    "preco": 56.79,
-    "precoAntigo": 61.90,
-    "imagem": "assets/img/pas9.jpg",
-    "alt": "Megazoo",
+    "preco": 430.00,
+    "precoAntigo": 480.00,
+    "imagem": "assets/img/gaiola2.webp",
+    "alt": "Gaiola ",
     "button": "Adicionar ao Carrinho"
   },
   {

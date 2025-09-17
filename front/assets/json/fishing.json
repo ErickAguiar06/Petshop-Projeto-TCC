@@ -98,5 +98,25 @@
         "imagem": "assets/img/Alcon9.webp",
         "alt": "Alcon Basic",
         "button": "Adicionar ao Carrinho"
+    },
+      {
+        "id": 90,
+        "nome": "Alcon Premium",
+        "descricao": "Ração premium para peixes de aquário.",
+        "preco": 44.90,
+        "precoAntigo": 52.00,
+        "imagem": "assets/img/Alcon9.webp",
+        "alt": "Alcon Basic",
+        "button": "Adicionar ao Carrinho"
+    },
+      {
+        "id": 90,
+        "nome": "Alcon Premium",
+        "descricao": "Ração premium para peixes de aquário.",
+        "preco": 44.90,
+        "precoAntigo": 52.00,
+        "imagem": "assets/img/Alcon9.webp",
+        "alt": "Alcon Basic",
+        "button": "Adicionar ao Carrinho"
     }
 ]

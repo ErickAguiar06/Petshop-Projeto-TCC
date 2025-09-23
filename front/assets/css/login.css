@@ -18,7 +18,7 @@ body {
 header {
   padding: 20px 10%;
   width: 100%;
-  background: linear-gradient(90deg, #c4520c 0%, #ffb347 100%);
+  background: linear-gradient(90deg, #c4520c 0%, #c4520c 100%);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -26,8 +26,16 @@ header {
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;
+     display: flex;
+  align-items: center;
+
+}
+.logo img {
+  height: 60px; 
+  border-radius: 10px;
+
 }
 
 nav ul {

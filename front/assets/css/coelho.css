@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #14680c 0%, #5b911f 100%);
+    background: linear-gradient(90deg, #f09da7 0%, #f09da7 100%);
     padding: 20px 10%;
     color: #fff;     
 }
@@ -10,11 +10,12 @@ header {
 .logo {
     font-size: 30px;
     font-weight: bold;
+    font-family: Georgia, serif;
 }
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, #5b911f 0%, #14680c 100%);
+    background: linear-gradient(90deg, #f09da7 0%, #ffe2de 100%);
     font-family: Arial, sans-serif;
 }
 
@@ -144,7 +145,7 @@ button.fechar:hover {
     font-size: 30px;
     padding: 10px;
     background-color: #fff;
-    color: #5b911f;
+    color: black;
     cursor: pointer;
     position: fixed;
     top: 10px;

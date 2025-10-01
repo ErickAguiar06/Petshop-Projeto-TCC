@@ -19,7 +19,7 @@ let productsIndex = 0;
 function moveProducts(direction) {
   const track = document.getElementById("productsTrack");
   const productCards = track.querySelectorAll(".product");
-  const cardWidth = productCards[0] ? productCards[0].offsetWidth + 20 : 270; // 20 = gap
+  const cardWidth = productCards[0] ? productCards[0].offsetWidth + 20 : 270; 
   const visibleCards = Math.floor(track.parentElement.offsetWidth / cardWidth);
 
   productsIndex += direction;
@@ -29,4 +29,36 @@ function moveProducts(direction) {
 
   track.style.transform = `translateX(-${productsIndex * cardWidth}px)`;
   track.style.transition = "transform 0.3s";
+}
+{
+  const bannerCarousel = document.querySelector(".carousel");
+  const track = bannerCarousel.querySelector(".carousel-track");
+  const slides = Array.from(track.children);
+  const dots = bannerCarousel.querySelectorAll(".carousel-indicators .dot"); 
+
+  let currentIndex = 0;
+  let autoPlay;
+
+  // Mostra o slide atual
+  function showSlide(index) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    if (dots.length) {
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+    }
+  }
+
+  // Próximo slide
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  // Autoplay
+  function startAutoPlay() {
+    autoPlay = setInterval(nextSlide, 5000); // Troca a cada 5 segundos
+  }
+
+  // Inicializa
+  showSlide(currentIndex);
+  startAutoPlay();
 }

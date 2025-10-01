@@ -1,3 +1,12 @@
+# Repositório Back
+
+https://github.com/ErickAguiar06/back-TCC
+
+# Repositório Front
+
+https://github.com/ErickAguiar06/front-TCC
+
+
 # Documentação - Petshop 4 Patas 🐾
 
 Este repositório contém toda a documentação referente ao projeto **Petshop 4 Patas**..

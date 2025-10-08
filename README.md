@@ -73,11 +73,11 @@ O quadro Kanban foi organizado com as seguintes etapas:
 
 ## 📊 Relatório de testes
 
-![Teste Front-end](docs/Testes/Relatório de teste Front (Justo).pdf)
-![Teste Back-end](docs/Testes/Relatório de teste Back (Justo).pdf)
+![Teste Front-end](docs/Testes/Relatório_de_teste_Front_(Justo).pdf)
+![Teste Back-end](docs/Testes/Relatório_de_teste_Back_(Justo).pdf)
 
-![Teste por colegas Front-end](docs/Testes/Relatório de Testes Front-end (por Willian e Lizzie).pdf)
-![Teste por colegas Back-end](docs/Testes/Relatório de Testes Back-end (por Willian e Lizzie).pdf)
+![Teste por colegas Front-end](docs/Testes/Relatório_de_Testes_Front-end_(Willin_Lizzie).pdf)
+![Teste por colegas Back-end](docs/Testes/Relatório_de_Testes_Back-end_(Willian_Lizzie).pdf)
 
 
 ## 👥 Grupo

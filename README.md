@@ -71,6 +71,13 @@ O quadro Kanban foi organizado com as seguintes etapas:
 - 🟡 **Em andamento** – Tarefas que estão sendo desenvolvidas no momento.
 - 🟢 **Concluído** – Tarefas finalizadas e revisadas.
 
+## 📊 Relatório de testes
+
+![Teste Front-end](docs/Testes/Relatório de teste Front (Justo).pdf)
+![Teste Back-end](docs/Testes/Relatório de teste Back (Justo).pdf)
+
+![Teste por colegas Front-end](docs/Testes/Relatório de Testes Front-end (por Willian e Lizzie).pdf)
+![Teste por colegas Back-end](docs/Testes/Relatório de Testes Back-end (por Willian e Lizzie).pdf)
 
 ## 👥 Grupo
 
